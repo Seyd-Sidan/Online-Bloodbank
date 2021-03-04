@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remove Account</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .myDiv {
+  background-color: lightblue;  
+}
+</style>
+</head>
+<body class="myDiv">
+<form action="removednr" method="post">
+	<div class="container">
+	{%csrf_token%}
+	<h1 align="center" style="font-family: arial black"><bold>Remove Doner Account</bold></h1>
+	<div class="form-group">
+	<label>Phone Number :</label> <input type="text" class="form-control" placeholder="Enter Phone_no" name="num">
+</div>
+<div style="text-align: center;">
+	<input type="submit" name="submit" class="btn btn-danger" value="Delete Account"><br><br>
+	{{msg1}}<br>
+	{{msg2}}<br>
+	<a href="{% url 'homepg'%}">Home</a>
+</div>
+</div>
+</form>
+</body>
+</html>

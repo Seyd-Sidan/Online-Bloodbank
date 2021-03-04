@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online BLoodbank Management System</title>
+	<style type="text/css">
+		* {
+  			box-sizing: border-box;
+			}
+		.column {
+  				float: left;
+  				width: 50%;
+  				padding: 10px;
+  				height: 600px;
+				}
+		.row:after {
+  					content: "";
+ 					display: table;
+  					clear: both;
+					}
+
+		.button {
+  				background-color: #f4511e;
+  				border: none;
+  				color: white;
+  				padding: 25px 36px;
+  				text-align: center;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				opacity: 0.6;
+  				transition: 0.3s;
+  				display: inline-block;
+  				text-decoration: none;
+ 				 cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  }
+
+ .head{
+ 	background-color:  #ff5c33;
+ 	opacity: 0.9;
+ 	height: 120px;
+
+ }
+	</style>
+</head>
+<body>
+	<div class="head">
+	<h1 align="center"  style="color: white;padding-top: 35px;font-family: arial black ">ONLINE BLOODBANK MANAGEMENT SYSTEM</h1>
+</div>
+	<div class="row">
+    <div class="column" style="background-color:#aaa;">
+	<form action="donerpg">
+	
+	<div class="center">
+	<input type="submit" class="button" name="submit" value="BLOOD DONER">
+</div>
+	</form>
+	</div>
+
+	<div class="column" style="background-color:#bbb;">
+
+	<form action="recieverpg">
+	<div class="center">
+	<input type="submit" class="button" name="submit" value="BLOOD RECIEVER">
+     </div>
+	
+	</form>
+	</div>
+</div>
+</body>
+</html>
